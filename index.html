@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Actions and stuffs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="someform" onsubmit="alert('You are doing great!')" >
+<p id="hint"></p>
+<label for="name">Name:</label>
+<input type="text" name="name" placeholder="Your name" onfocus="displayTip(name)">
+<label for="password">Password:</label>
+<input type="password" id="ps" name="password" placeholder="qwerty1234" onfocus="displayTip(name)" onblur="checkPass()">
+<label for="r-password">Repeat password:</label>
+<input type="password" id="rp" name="r-password" placeholder="qwerty1234 again"  onfocus="displayTip(name)" onblur="checkPass()">
+<p id="passH"></p>
+<label for="textarea">About you:</label>
+<textarea id="textarea" rows="1" placeholder="A self-resizing text area! amazing stuff! great work!"></textarea>
+<input type="submit" value="Register">
+</form>
+
+  <script src="function.js"></script>
+</body>
+</html>
